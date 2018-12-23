@@ -29,18 +29,19 @@ spring:
      
 eureka:
   client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka
+    service-url: 
+       #defaultZone: http://localhost:7001/eureka
+       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: microservice-dept8001
-    prefer-ip-address: true     #访问路径可以显示IP地址
+    instance-id: microservicecloud-deptdb02_dev
+    prefer-ip-address: true     #访问路径可以显示IP地址  
     
  
-info:
-  app.name: yaorange-microservicecloud_8001
+info: 
+  app.name: yaorange-microservicecloud
   company.name: www.yaorange.com
   build.artifactId: $project.artifactId$
-  build.version: $project.version$       
+  build.version: $project.version$        
 ---
 server:
   port: 8001 
@@ -68,13 +69,16 @@ spring:
      
 eureka:
   client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://eureka7001.com:7001/eureka
+    service-url: 
+       #defaultZone: http://localhost:7001/eureka
+       defaultZone: http://eureka7001.com:7001/eureka/
   instance:
-    instance-id: microservice-dept8001
-    prefer-ip-address: true     #访问路径可以显示IP地址
-info:
-  app.name: yaorange-microservicecloud_8001
+    instance-id: microservicecloud-deptdb03_test
+    prefer-ip-address: true     #访问路径可以显示IP地址  
+    
+ 
+info: 
+  app.name: yaorange-microservicecloud
   company.name: www.yaorange.com
   build.artifactId: $project.artifactId$
-  build.version: $project.version$
+  build.version: $project.version$  
